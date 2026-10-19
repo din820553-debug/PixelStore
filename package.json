@@ -1,12 +1,12 @@
 {
   "name": "pixelstore",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "PixelStore storefront and private order/receipt storage",
-  "engines": { "node": ">=24.0.0" },
+  "description": "PixelStore storefront with Python order and receipt storage",
   "scripts": {
-    "start": "node server/index.cjs",
-    "test": "node --test test/*.test.cjs",
-    "backup": "node server/backup.cjs"
+    "start": "python run.py",
+    "test": "python -m unittest discover -s test -v",
+    "backup": "python -m server.backup",
+    "catalog": "python scripts/build_catalog.py"
   }
 }

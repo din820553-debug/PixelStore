@@ -1,0 +1,7 @@
+{
+  "admin_token": "",
+  "public_origin": "",
+  "port": 25011,
+  "max_data_mb": 300,
+  "min_free_mb": 50
+}

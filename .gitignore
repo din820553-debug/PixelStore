@@ -10,3 +10,9 @@ backups/
 *.db-*
 *.log
 .DS_Store
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.zip
