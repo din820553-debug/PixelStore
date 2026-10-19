@@ -1,0 +1,17 @@
+(function(){
+const products=[
+{id:'vip',name:'VIP',category:'ranks',usd:6.99,color:'#78d896',subtitle:'Твой первый шаг к большему',features:['Зелёный префикс [VIP]','Бессрочный ранг','Начальный уровень привилегий']},
+{id:'vipplus',name:'VIP+',category:'ranks',usd:14.99,color:'#8fdd9c',subtitle:'Больше возможностей для тебя',features:['Префикс [VIP+]','Бессрочный ранг','Следующая ступень после VIP']},
+{id:'mvp',name:'MVP',category:'ranks',usd:29.99,color:'#78c8ee',subtitle:'Выделяйся среди игроков',features:['Голубой префикс [MVP]','Бессрочный ранг','Уровень выше VIP+']},
+{id:'mvpplus',name:'MVP+',category:'ranks',usd:44.99,color:'#7bc8f3',subtitle:'Для тех, кто хочет большего',badge:'ВЫБОР PIXEL',featured:true,features:['Префикс [MVP+]','Бессрочный ранг','Основа для улучшения MVP++']},
+{id:'mvpplusplus',name:'MVP++',category:'ranks',usd:7.99,color:'#efb968',subtitle:'Максимум стиля на 30 дней',badge:'PREMIUM',features:['Золотой префикс [MVP++]','Подписка на 30 дней','Необходим активный MVP+']},
+{id:'gold1',name:'1 000 Gold',category:'gold',usd:10,color:'#edc469',subtitle:'Небольшой запас для покупок',features:['Внутриигровая валюта','Для магазина Hypixel','Демонстрационный пакет']},
+{id:'gold2',name:'2 500 Gold',category:'gold',usd:25,color:'#efbc58',subtitle:'Больше места для выбора',features:['Внутриигровая валюта','Для магазина Hypixel','Демонстрационный пакет']},
+{id:'gold3',name:'5 000 Gold',category:'gold',usd:50,color:'#ffb85c',subtitle:'Для больших игровых планов',features:['Внутриигровая валюта','Для магазина Hypixel','Демонстрационный пакет']},
+{id:'boost1',name:'SkyWars',category:'boosters',usd:9.99,color:'#c39bf4',subtitle:'Сетевой бустер',features:['Для режима SkyWars','Условия активации на сервере','Демонстрационный товар']},
+{id:'boost2',name:'TNT Games',category:'boosters',usd:9.99,color:'#f08c91',subtitle:'Сетевой бустер',features:['Для режима TNT Games','Условия активации на сервере','Демонстрационный товар']}];
+
+if(typeof module!=='undefined'&&module.exports) module.exports=products;
+else window.PIXELSTORE_CATALOG=products;
+
+})();

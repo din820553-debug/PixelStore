@@ -1,0 +1,22 @@
+[Unit]
+Description=PixelStore private order storage
+After=network.target
+
+[Service]
+Type=simple
+User=pixelstore
+Group=pixelstore
+WorkingDirectory=/opt/pixelstore
+EnvironmentFile=/etc/pixelstore.env
+ExecStart=/usr/bin/node server/index.cjs
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/pixelstore
+
+[Install]
+WantedBy=multi-user.target
